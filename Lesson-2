@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.0;
+
+contract Contract {
+    function Values() public payable returns(uint, uint, uint)
+    {
+        uint Vwei = msg.value;
+        uint Vether = Vwei / 1 ether;
+        uint Vgwei = Vwei / 1 gwei;
+
+        return (Vether, Vwei, Vgwei);
+    }
+}
