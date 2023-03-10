@@ -1,0 +1,65 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.0;
+
+contract Assignment 
+{
+    uint num;
+    string str;
+    bool isTrue;
+    address addr;
+
+    // get for int
+    function getInt() public view returns(uint)
+    {
+        return num;
+    }
+    // set for int
+    function setInt(uint _num) public returns(uint)
+    {
+        num = _num;
+        return num;
+    }
+
+    // getstring
+    function getString() public view returns(string memory)
+    {
+        return str;
+    }
+    // set String
+    function setString(string memory _str) public returns(string memory)
+    {
+        str = _str;
+        return str;
+    }
+
+    // get bool
+    function getBool() public view returns(bool)
+    {
+        return isTrue;
+    }
+    // set bool
+    function setBool(bool _isTrue) public returns(bool)
+    {
+        isTrue = _isTrue;
+        return isTrue;
+    }
+
+    // get address
+    function getAddr() public view returns(address)
+    {
+        return addr;
+    }
+    // set address
+    function setAddr(address _addr) public returns(address)
+    {
+        addr = _addr;
+        return addr;
+    }
+
+    // amount
+    function Amount() public payable returns(uint)
+    {
+        uint amount = msg.value;
+        return amount;
+    }
+}
